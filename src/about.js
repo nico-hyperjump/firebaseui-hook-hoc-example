@@ -8,14 +8,13 @@ function About() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>About Page</h1>
+        <Link to="/">Home</Link>
         {user && (
           <div>
-            <h1>About Page</h1>
             <p>Hello, {user.displayName}</p>
             <button onClick={signout}>Sign out</button>
-            <div>
-              <Link to="/">Home</Link>
-            </div>
+            <div></div>
           </div>
         )}
         {!user && !isChecking && SignInComponent}

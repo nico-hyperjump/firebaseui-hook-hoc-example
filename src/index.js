@@ -3,7 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { AuthProvider } from "@hyperjumptech/firebaseui-react-hook-hoc";
+import {
+  AuthProvider,
+  advancedUIConfig,
+} from "@hyperjumptech/firebaseui-react-hook-hoc";
 import * as firebase from "firebase/app";
 
 const firebaseConfig = {
@@ -21,9 +24,17 @@ if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
+const uiConfig = {
+  ...advancedUIConfig,
+  signInOptions: [
+    firebase.auth.EmailAuthProvider.PROVIDER_ID,
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+  ],
+};
+
 ReactDOM.render(
   <React.StrictMode>
-    <AuthProvider>
+    <AuthProvider uiConfig={uiConfig}>
       <App />
     </AuthProvider>
   </React.StrictMode>,

@@ -1316,13 +1316,8 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hyperjumptech/firebaseui-react-hook-hoc@file:../hyperjumptech-firebaseui-react-hook-hoc-0.0.3.tgz":
-  version "0.0.1"
-  resolved "file:../hyperjumptech-firebaseui-react-hook-hoc-0.0.3.tgz#b5fa682bf00be026a3916ba28803d3bd98e45d92"
-
 "@hyperjumptech/firebaseui-react-hook-hoc@file:./hyperjumptech-firebaseui-react-hook-hoc-0.0.1.tgz":
   version "0.0.1"
-  uid b5fa682bf00be026a3916ba28803d3bd98e45d92
   resolved "file:./hyperjumptech-firebaseui-react-hook-hoc-0.0.1.tgz#b5fa682bf00be026a3916ba28803d3bd98e45d92"
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
